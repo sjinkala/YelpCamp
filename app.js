@@ -51,6 +51,6 @@ console.log("Hello World");
  app.use("/tbd/:id/tbd", tbd);
 
 
- app.listen(process.env.PORT, process.env.IP, function(){
-    console.log("the server has started");
- });
+app.listen(process.env.PORT || 3000, function(){
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+})
