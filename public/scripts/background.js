@@ -1,4 +1,5 @@
 var counter = 0;
+
 function changeBG(){
     var imgs = [
         "url(https://images.unsplash.com/photo-1414016642750-7fdd78dc33d9?dpr=2&fit=crop&fm=jpg&h=825&ixlib=rb-0.3.5&q=50&w=1450)",
@@ -17,6 +18,6 @@ function changeBG(){
     counter++;
 }
   
-  setInterval(changeBG, 2000);
+  setInterval(changeBG, 3000);
 
 
